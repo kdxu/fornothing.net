@@ -8,7 +8,6 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={icon} className="App-logo" alt="logo" />
           <h1 className="App-title">kdxu.fornothing.net</h1>
         </header>
         <h2> About </h2>

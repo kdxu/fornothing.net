@@ -8,6 +8,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
+          <img src={icon} className="App-logo" alt="logo" />
           <h1 className="App-title">kdxu.fornothing.net</h1>
         </header>
         <h2> About </h2>
@@ -15,8 +16,8 @@ class App extends Component {
         <hr/>
         <h2> Links </h2>
         <ButtonGroup vertical>
-          <Button bsStyle="link" href="https:/github.com/kdxu">github</Button>
-          <Button bsStyle="link" href="https:/twitter.com/kdxu">twitter</Button>
+          <Button bsStyle="link" href="https://github.com/kdxu">github</Button>
+          <Button bsStyle="link" href="https://twitter.com/kdxu">twitter</Button>
           <Button bsStyle="link" href="https://medium.com/@kdxu">medium</Button>
           <Button bsStyle="link" href="https://keybase.io/kdxu">keybase</Button>
         </ButtonGroup>

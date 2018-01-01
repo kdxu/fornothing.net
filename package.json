@@ -2,7 +2,7 @@
   "name": "kdxu.fornothing.net",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://fornothing.net/",
+  "homepage": "https://kdxu.fornothing.net/",
   "dependencies": {
     "bootstrap": "3",
     "react": "^16.2.0",

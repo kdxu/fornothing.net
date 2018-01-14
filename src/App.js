@@ -20,6 +20,7 @@ class App extends Component {
           <Button bsStyle="link" href="https://twitter.com/kdxu">twitter</Button>
           <Button bsStyle="link" href="https://medium.com/@kdxu">medium</Button>
           <Button bsStyle="link" href="https://keybase.io/kdxu">keybase</Button>
+          <Button bsStyle="link" href="https://dev.to/kdxu">dev.to</Button>
         </ButtonGroup>
         <hr/>
           kyoko.kadowaki [at] gmail.com

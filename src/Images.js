@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Section from './common/Section.js';
-import { Carousel, Button } from 'react-bootstrap';
+import { Carousel, Well } from 'react-bootstrap';
 
 const gifs = [
   {
@@ -24,16 +24,18 @@ const gifs = [
 
 export default () => (
   <Section title="Gifs" children={
+    <Well>
     <Carousel>
     {gifs.map(gif => (
       <Carousel.Item>
-      <img src={gif.url} alt={gif.title} width="900" height="500"/>
+      <img src={gif.url} alt={gif.title}/>
       <Carousel.Caption>
-      <h2>{gif.title}</h2>
+      <h3>{gif.title}</h3>
       </Carousel.Caption>
       </Carousel.Item>
   ))}
     </Carousel>
+    </Well>
   }
   />
 );

@@ -38,7 +38,7 @@ export default () => (
     </Carousel>
     </Well>
     <div>
-    <a href="https://twitter.com/intent/tweet?text=限界百合オタク&url=https://kdxu.fornothing.net/gifs" onClick="window.open(encodeURI(decodeURI(this.href)), 'tweetwindow', 'width=650, height=470, personalbar=0, toolbar=0, scrollbars=1, sizable=1'); return false;" rel="nofollow" class="btn btn-social btn-twitter"> <span class="fa fa-twitter"></span>
+    <a href="https://twitter.com/intent/tweet?text=限界百合オタク&url=https://kdxu.fornothing.net/%23/gifs&hashtags=限界百合オタク'" onClick="window.open(encodeURI(decodeURI(this.href)), 'tweetwindow', 'width=650, height=470, personalbar=0, toolbar=0, scrollbars=1, sizable=1'); return false;" rel="nofollow" class="btn btn-social btn-twitter"> <span class="fa fa-twitter"></span>
     Tweet
     </a>
     </div>

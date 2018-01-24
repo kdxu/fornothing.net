@@ -1,25 +1,27 @@
-import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom'
+import React, {Component} from 'react';
+import { HashRouter, Route } from 'react-router-dom'
 import About from './About.js';
 import Header from './Header.js';
 import Links from './Links.js'
 import Images from './Images.js';
 import './App.css';
 
-const App = () => (
-  <div className="App">
-  <Header />
-  <BrowserRouter>
+class App extends Component {
+  render(){ return (
+    <div className="App">
+    <Header />
+    <HashRouter>
     <div>
-      <Route exact path='/' component={Home} />
-      <Route path='/gifs' component={Gifs} />
+    <Route exact path='/' component={Home} />
+    <Route path='/gifs' component={Gifs} />
     </div>
-  </BrowserRouter>
-  <footer>
-  kyoko.kadowaki [at] gmail.com
-  </footer>
-  </div>
-)
+    </HashRouter>
+    <footer>
+    kyoko.kadowaki [at] gmail.com
+    </footer>
+    </div>
+  )}
+}
 
 const Home = () => (
       <div>

@@ -6,22 +6,22 @@ const links = [
   {
     url: 'https://github.com/kdxu',
     title: 'GitHub',
-    icon: 'fa fa-github-alt'
+    icon: 'fa fa-github-alt',
   },
   {
     url: 'https://keybase.io/kdxu',
     title: 'Keybase',
-    icon: 'fa fa-key'
+    icon: 'fa fa-key',
   },
   {
     url: 'https://dev.to/kdxu',
     title: 'dev.to',
-    icon: 'fa fa-file'
+    icon: 'fa fa-file',
   },
   {
     url: 'https://medium.com/@kdxu',
     title: 'Medium(blog)',
-    icon: "fa fa-medium"
+    icon: 'fa fa-medium',
   },
 ];
 
@@ -32,11 +32,9 @@ export default () => (
       <ButtonGroup vertical>
         {links.map(link => (
           <Button bsStyle="link" href={link.url}>
-          <div line-height="1.5em">
-            <i class={link.icon} aria-hidden="true"></i>
-            {' '}
-            <span>{link.title}</span>
-          </div>
+            <div line-height="1.5em">
+              <i className={link.icon} aria-hidden="true" /> <span>{link.title}</span>
+            </div>
           </Button>
         ))}
       </ButtonGroup>

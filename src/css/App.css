@@ -44,3 +44,22 @@
   max-width: 100%;
   width: 100%;
 }
+
+.App-footer {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  background-color: gray;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.App-footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+.App-footer li > a {
+  color: white;
+  border-bottom: dotted 1px gray;
+}

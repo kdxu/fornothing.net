@@ -1,38 +1,37 @@
-import React, {Component} from 'react';
-import { HashRouter, Route } from 'react-router-dom'
-import About from './About.js';
-import Header from './Header.js';
-import Links from './Links.js'
-import Images from './Images.js';
-import './App.css';
+import React, { Component } from "react";
+import { HashRouter, Route, Switch } from "react-router-dom";
+import About from "./components/About.js";
+import Header from "./components/Header.js";
+import Links from "./components/Links.js";
+import Images from "./components/Images.js";
+import Footer from "./components/Footer.js";
+import "./css/App.css";
 
-class App extends Component {
-  render(){ return (
+const App = () =>
+  (
     <div className="App">
     <Header />
     <HashRouter>
-    <div>
-    <Route exact path='/' component={Home} />
-    <Route path='/gifs' component={Gifs} />
-    </div>
+    <Switch>
+    <Route exact path="/" component={Home} />
+    <Route path="/gifs" component={Gifs} />
+    </Switch>
     </HashRouter>
-    <footer>
-    kyoko.kadowaki [at] gmail.com
-    </footer>
+    <Footer />
     </div>
-  )}
-}
+  );
+  
 
 const Home = () => (
-      <div>
-      <About />
-      <Links />
-      </div>
+  <div>
+    <About />
+    <Links />
+  </div>
 );
 
 const Gifs = () => (
-      <div>
-      <Images / >
-      </div>
+  <div>
+    <Images />
+  </div>
 );
 export default App;

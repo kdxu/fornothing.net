@@ -1,6 +1,5 @@
 import React from 'react';
 import Section from './common/Section.js';
-import { ButtonGroup, Button } from 'react-bootstrap';
 
 const works = [
   {

@@ -29,7 +29,7 @@ export default () => (
   <Section
     title="Links"
     children={
-      <ButtonGroup vertical>
+      <ButtonGroup>
         {links.map(link => (
           <Button bsStyle="link" href={link.url}>
             <div line-height="1.5em">

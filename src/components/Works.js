@@ -39,7 +39,9 @@ export default () => (
     title="Personal Works"
     children={works.map(work => (
       <div key={work.key}>
-        <h4><a href={work.url}>{work.title}</a></h4>
+        <h4>
+          <a href={work.url}>{work.title}</a>
+        </h4>
         <p>{work.description}</p>
       </div>
     ))}

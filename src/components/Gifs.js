@@ -1,27 +1,32 @@
 import React from 'react';
-import Section from './common/Section.js';
+import Section from './common/Section';
 import { Carousel, Well } from 'react-bootstrap';
 
 const gifs = [
   {
+    id: 1,
     url: '../gifs/flameotaku.gif',
     title: 'フレイム',
   },
   {
+    id: 2,
     url: '../gifs/strobo.gif',
     title: 'ストロボ',
   },
   {
+    id: 3,
     url: '../gifs/genkai.gif',
     title: '海',
   },
   {
+    id: 4,
     url: '../gifs/metalic.gif',
     title: 'メタリック',
   },
 ];
 
 export default () => (
+  <div>
   <Section
     title="Gifs"
     children={
@@ -29,7 +34,7 @@ export default () => (
         <Well>
           <Carousel>
             {gifs.map(gif => (
-              <Carousel.Item>
+              <Carousel.Item key={gif.id}>
                 <img src={gif.url} alt={gif.title} />
                 <Carousel.Caption>
                   <h3>{gif.title}</h3>
@@ -53,4 +58,5 @@ export default () => (
       </div>
     }
   />
+  </div>
 );

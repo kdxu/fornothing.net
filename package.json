@@ -4,6 +4,8 @@
   "private": true,
   "homepage": "https://kdxu.fornothing.net/",
   "dependencies": {
+    "alt": "^0.18.6",
+    "alt-utils": "^2.0.0",
     "bootstrap": "3",
     "bootstrap-social": "^5.1.1",
     "react": "^16.2.0",

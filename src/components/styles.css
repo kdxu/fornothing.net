@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.App {
+}
+
+.AppHeader {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+  text-align: center
+}
+
+
+.AppIcon {
+  display: flex;
+  justify-content: center;
+}
+
+.Content {
+  margin: 30px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}

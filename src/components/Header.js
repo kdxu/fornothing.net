@@ -1,14 +1,11 @@
 /* @flow */
 import React from 'react'
 import styles from './styles.css'
-import Avatar from 'material-ui/Avatar'
-import avatar from '~/assets/avatar.png'
+import Grid from 'material-ui/Grid'
+import logo from '~/assets/logo.gif'
 
 export default () => (
-  <header className={styles.AppHeader}>
-    <div className={styles.AppIcon}>
-      <Avatar style={{ width: 80, height: 80 }} src={avatar} />
-    </div>
-    <h1>kdxu.fornothing.net</h1>
-  </header>
+  <Grid item xs={12} sm={12} md={12} lg={12} className={styles.AppHeader}>
+    <img className={styles.AppIcon} src={logo} />
+  </Grid>
 )

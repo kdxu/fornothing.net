@@ -2,13 +2,13 @@
 import React from 'react'
 import Header from '~/components/Header'
 import Content from '~/components/Content'
-import styles from './styles.css'
+import Grid from 'material-ui/Grid'
 
 export default function App() {
   return (
-    <div className={styles.App}>
+    <Grid container spacing={16}>
       <Header />
       <Content />
-    </div>
+    </Grid>
   )
 }

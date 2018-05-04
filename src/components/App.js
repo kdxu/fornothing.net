@@ -6,7 +6,7 @@ import Grid from 'material-ui/Grid'
 
 export default function App() {
   return (
-    <Grid container spacing={16}>
+    <Grid container spacing={16} justify="center">
       <Header />
       <Content />
     </Grid>

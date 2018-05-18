@@ -21,11 +21,11 @@ export default () => (
               src={avatar}
             />
             <Typography variant="headline" component="h3">
-              Kyoko Kadowaki(門脇香子) or @kdxu
+              @kdxu
             </Typography>
           </Grid>
           <Grid item xs={12}>
-            1992/02/18 生
+            🎂 1992/02/18
           </Grid>
 
           <Grid item xs={12}>

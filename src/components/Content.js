@@ -8,7 +8,25 @@ import Button from 'material-ui/Button'
 import Grid from 'material-ui/Grid'
 import Code from '@material-ui/icons/Code'
 import Create from '@material-ui/icons/Create'
-import avatar from '~/assets/avatar.png'
+import avatar0 from '~/assets/avatars/avatar0.png'
+import avatar1 from '~/assets/avatars/avatar1.png'
+import avatar2 from '~/assets/avatars/avatar2.png'
+import avatar3 from '~/assets/avatars/avatar3.png'
+import avatar4 from '~/assets/avatars/avatar4.png'
+import avatar5 from '~/assets/avatars/avatar5.png'
+import avatar6 from '~/assets/avatars/avatar6.png'
+import avatar7 from '~/assets/avatars/avatar7.png'
+
+const avatars = [
+  avatar0,
+  avatar1,
+  avatar2,
+  avatar3,
+  avatar4,
+  avatar5,
+  avatar6,
+  avatar7
+]
 
 export default () => (
   <Grid className={styles.Content} item xs={12} sm={12} md={12} lg={12}>
@@ -18,7 +36,7 @@ export default () => (
           <Grid item xs={12} md={12}>
             <Avatar
               style={{ width: 200, height: 200, margin: 10 }}
-              src={avatar}
+              src={avatars[Math.floor(Math.random() * avatars.length)]}
             />
             <Typography variant="headline" component="h3">
               @kdxu

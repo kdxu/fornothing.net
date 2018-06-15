@@ -57,14 +57,14 @@ export default () => (
               variant="raised"
               href="https://medium.com/@kdxu"
             >
-              <Create />Blog (medium)
+              <Create />Medium
             </Button>
             <Button
               style={{ margin: 10 }}
               variant="raised"
               href="https://devblog.fornothing.net"
             >
-              <Create />Blog (tech memo)
+              <Create />Tech memo
             </Button>
 
           </Grid>

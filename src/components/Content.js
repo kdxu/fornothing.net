@@ -59,6 +59,14 @@ export default () => (
             >
               <Create />Blog (medium)
             </Button>
+            <Button
+              style={{ margin: 10 }}
+              variant="raised"
+              href="https://devblog.fornothing.net"
+            >
+              <Create />Blog (tech memo)
+            </Button>
+
           </Grid>
         </Grid>
       </CardContent>

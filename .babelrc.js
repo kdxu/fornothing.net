@@ -18,14 +18,16 @@ const plugins = [
 const presets = ['@babel/preset-flow', '@babel/preset-react']
 
 const presetsByEnv = {
-  development: [['@babel/preset-env', { targets: { chrome: 65 } }]],
-  test: [['@babel/preset-env', { targets: { node: '8.5' } }]],
+  development: [['@babel/preset-env', { targets: {browsers: ["last 2 versions"] }}]],
+  test: [['@babel/preset-env', { targets: { node: '9' } }]],
   production: [
     [
       '@babel/preset-env',
       {
         modules: false,
-        browsers: ['last 2 versions', 'ie >= 11']
+        targets: {
+          browsers: ['last 2 versions', 'ie >= 11']
+        }
       }
     ]
   ]

@@ -1,11 +1,12 @@
 /* @flow */
 import React from 'react'
 import styles from './styles.css'
-import Avatar from 'material-ui/Avatar'
-import Card, { CardContent } from 'material-ui/Card'
-import Typography from 'material-ui/Typography'
-import Button from 'material-ui/Button'
-import Grid from 'material-ui/Grid'
+import Avatar from '@material-ui/core/Avatar'
+import Card from '@material-ui/core/Card'
+import CardContent from '@material-ui/core/CardContent'
+import Typography from '@material-ui/core/Typography'
+import Button from '@material-ui/core/Button'
+import Grid from '@material-ui/core/Grid'
 import Code from '@material-ui/icons/Code'
 import Create from '@material-ui/icons/Create'
 import avatar0 from '~/assets/avatars/avatar0.png'
@@ -30,7 +31,7 @@ const avatars = [
   avatar8
 ]
 
-export default () => (
+const Content = () => (
   <Grid className={styles.Content} item xs={12} sm={12} md={12} lg={12}>
     <Card style={{ minHeight: 100 }}>
       <CardContent>
@@ -50,23 +51,25 @@ export default () => (
 
           <Grid item xs={12}>
             <Button variant="raised" href="https://github.com/kdxu">
-              <Code />GitHub
+              <Code />
+              GitHub
             </Button>
             <Button
               style={{ margin: 10 }}
               variant="raised"
               href="https://medium.com/@kdxu"
             >
-              <Create />Medium
+              <Create />
+              Medium
             </Button>
             <Button
               style={{ margin: 10 }}
               variant="raised"
               href="https://devblog.fornothing.net"
             >
-              <Create />Tech memo
+              <Create />
+              Tech memo
             </Button>
-
           </Grid>
         </Grid>
       </CardContent>
@@ -112,6 +115,35 @@ export default () => (
         <Grid container spacing={16}>
           <Grid item xs={12} md={12}>
             <Typography variant="headline" component="h4">
+              技術系のスキル
+            </Typography>
+            <ul>
+              <li>雑に</li>
+              <ul>
+                <li>
+                  C, C++, Objective-C, OCaml, Agda, Python, Erlang, Elixir,
+                  JavaScript, Ruby
+                </li>
+                <li>AWS, GCP(weak)</li>
+                <li>React Native</li>
+                <li>WebRTC, それにまつわるネットワーク関連技術</li>
+                <li>UI/UX (weak)</li>
+                <li>
+                  Adobe XD(weak), Adobe Illustrator(weak), Adobe After Effects
+                </li>
+                <li>組み込み(weak)</li>
+              </ul>
+              <li>興味に関わらず必要に応じて技能を身につけます</li>
+            </ul>
+          </Grid>
+        </Grid>
+      </CardContent>
+    </Card>
+    <Card>
+      <CardContent>
+        <Grid container spacing={16}>
+          <Grid item xs={12} md={12}>
+            <Typography variant="headline" component="h4">
               学歴
             </Typography>
             <ul>
@@ -141,3 +173,5 @@ export default () => (
     </div>
   </Grid>
 )
+
+export default Content

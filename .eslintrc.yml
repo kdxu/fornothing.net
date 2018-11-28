@@ -7,6 +7,9 @@ extends:
   - prettier
   - prettier/flowtype
   - prettier/react
+settings:
+  react:
+    version: 16.2
 rules:
   prettier/prettier:
     - 2

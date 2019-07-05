@@ -101,10 +101,33 @@ const Content = () => (
                   ソーシャルゲーム基盤システム開発(AWS/Nginx/Elixir/Erlang)
                 </li>
                 <li>
-                  ソーシャルゲームバックエンド開発(AWS/Nginx_OpenResty/Elixir)
+                  ソーシャルゲームバックエンド開発(AWS/Nginx(OpenResty)/Elixir)
                 </li>
-                <li>NDA</li>
+                <li>
+                  Django / React Native / React SPA / WebRTC
+                  を用いたシステム開発(非公開)
+                </li>
+                <li>React Native / WebRTC を用いたiOS アプリ開発(非公開)</li>
               </ul>
+            </ul>
+          </Grid>
+        </Grid>
+      </CardContent>
+    </Card>
+    <Card>
+      <CardContent>
+        <Grid container spacing={16}>
+          <Grid item xs={12} md={12}>
+            <Typography variant="headline" component="h4">
+              OSS 関連
+            </Typography>
+            <ul>
+              <li>
+                <a href="https://github.com/OpenAyame/ayame">
+                  WebRTC Signaling Server Ayame
+                </a>
+                の開発
+              </li>
             </ul>
           </Grid>
         </Grid>

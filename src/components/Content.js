@@ -1,6 +1,5 @@
 /* @flow */
 import React from 'react'
-import styles from './styles.css'
 import Avatar from '@material-ui/core/Avatar'
 import Card from '@material-ui/core/Card'
 import CardContent from '@material-ui/core/CardContent'
@@ -32,31 +31,27 @@ const avatars = [
 ]
 
 const Content = () => (
-  <Grid className={styles.Content} item xs={12} sm={12} md={12} lg={12}>
-    <Card style={{ minHeight: 100 }}>
+  <Grid item xs={12} sm={12} md={12} lg={12}>
+    <Card style={{ minHeight: 100, marginBottom: 10 }}>
       <CardContent>
-        <Grid container spacing={16}>
-          <Grid item xs={12} md={12}>
+        <Grid container spacing={10}>
+          <Grid item xs={12} md={12} style={{ paddingBottom: 5 }}>
             <Avatar
               style={{ width: 200, height: 200, margin: 10 }}
               src={avatars[Math.floor(Math.random() * avatars.length)]}
             />
-            <Typography variant="headline" component="h3">
+            <Typography variant="h4">
               @kdxu
             </Typography>
           </Grid>
-          <Grid item xs={12}>
-            🎂 1992/02/18
-          </Grid>
-
-          <Grid item xs={12}>
-            <Button variant="raised" href="https://github.com/kdxu">
+          <Grid item xs={12} md={12}>
+            <Button variant="contained" href="https://github.com/kdxu">
               <Code />
               GitHub
             </Button>
             <Button
               style={{ margin: 10 }}
-              variant="raised"
+              variant="contained"
               href="https://medium.com/@kdxu"
             >
               <Create />
@@ -64,7 +59,7 @@ const Content = () => (
             </Button>
             <Button
               style={{ margin: 10 }}
-              variant="raised"
+              variant="contained"
               href="https://devblog.fornothing.net"
             >
               <Create />
@@ -74,11 +69,11 @@ const Content = () => (
         </Grid>
       </CardContent>
     </Card>
-    <Card>
+    <Card style={{ minHeight: 100, marginBottom: 10 }}>
       <CardContent>
-        <Grid container spacing={16}>
+        <Grid container spacing={10}>
           <Grid item xs={12} md={12}>
-            <Typography variant="headline" component="h4">
+            <Typography variant="h4" component="h4">
               職歴
             </Typography>
             <ul>
@@ -114,11 +109,11 @@ const Content = () => (
         </Grid>
       </CardContent>
     </Card>
-    <Card>
+    <Card style={{ minHeight: 100, marginBottom: 10 }}>
       <CardContent>
-        <Grid container spacing={16}>
+        <Grid container spacing={10}>
           <Grid item xs={12} md={12}>
-            <Typography variant="headline" component="h4">
+            <Typography variant="h4" component="h4">
               OSS 関連
             </Typography>
             <ul>
@@ -133,11 +128,11 @@ const Content = () => (
         </Grid>
       </CardContent>
     </Card>
-    <Card>
+    <Card style={{ minHeight: 100, marginBottom: 10 }}>
       <CardContent>
-        <Grid container spacing={16}>
+        <Grid container spacing={10}>
           <Grid item xs={12} md={12}>
-            <Typography variant="headline" component="h4">
+            <Typography variant="h4" component="h4">
               技術系のスキル
             </Typography>
             <ul>
@@ -164,9 +159,9 @@ const Content = () => (
     </Card>
     <Card>
       <CardContent>
-        <Grid container spacing={16}>
+        <Grid container spacing={10}>
           <Grid item xs={12} md={12}>
-            <Typography variant="headline" component="h4">
+            <Typography variant="h4" component="h4">
               学歴
             </Typography>
             <ul>
@@ -191,7 +186,7 @@ const Content = () => (
         </Grid>
       </CardContent>
     </Card>
-    <div style={{ margin: 5 }}>
+    <div style={{ margin: 5, padding: 10 }}>
       <Typography component="p">kyoko.kadowaki [at] gmail.com</Typography>
     </div>
   </Grid>

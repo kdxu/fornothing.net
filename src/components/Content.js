@@ -52,14 +52,6 @@ const Content = () => (
             <Button
               style={{ margin: 10 }}
               variant="contained"
-              href="https://medium.com/@kdxu"
-            >
-              <Create />
-              Medium
-            </Button>
-            <Button
-              style={{ margin: 10 }}
-              variant="contained"
               href="https://devblog.fornothing.net"
             >
               <Create />

@@ -45,17 +45,21 @@ const Content = () => (
             </Typography>
           </Grid>
           <Grid item xs={12} md={12}>
-            <Button variant="contained" href="https://github.com/kdxu">
+            <Button variant="contained" href="https://github.com/kdxu" size="sm">
               <Code />
               GitHub
             </Button>
+            <Button variant="contained" href="https://github.com/kdxu/myself-release-notes" size="sm">
+              <Code />
+              じぶんリリースノート
+            </Button>
             <Button
-              style={{ margin: 10 }}
               variant="contained"
               href="https://devblog.fornothing.net"
+               size="sm"
             >
               <Create />
-              Tech memo
+              Memo
             </Button>
           </Grid>
         </Grid>

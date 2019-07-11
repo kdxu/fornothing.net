@@ -1,9 +1,9 @@
 const path = require("path");
 const webpack = require("webpack");
 const htmlWebpackPlugin = require("html-webpack-plugin");
-const { CleanWebpackPlugin } = require('clean-webpack-plugin'); // installed via npm
 const { WebpackPluginServe } = require('webpack-plugin-serve');
 const watch = process.env.NODE_ENV === 'development';
+const FaviconsWebpackPlugin = require("favicons-webpack-plugin")
 module.exports = (env, argv) => {
   const mode = process.env.NODE_ENV || "development";
   const isProduction = mode === "production";
@@ -50,7 +50,7 @@ module.exports = (env, argv) => {
       ]
     },
     plugins: [
-      new CleanWebpackPlugin(),
+      new FaviconsWebpackPlugin('./src/favicon.png'),
       new htmlWebpackPlugin({
         template: path.resolve(__dirname, "src/index.html"),
       }),

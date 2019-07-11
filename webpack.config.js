@@ -1,6 +1,7 @@
 const path = require("path");
 const webpack = require("webpack");
 const htmlWebpackPlugin = require("html-webpack-plugin");
+const { CleanWebpackPlugin } = require('clean-webpack-plugin'); // installed via npm
 const { WebpackPluginServe } = require('webpack-plugin-serve');
 const watch = process.env.NODE_ENV === 'development';
 module.exports = (env, argv) => {
@@ -49,6 +50,7 @@ module.exports = (env, argv) => {
       ]
     },
     plugins: [
+      new CleanWebpackPlugin(),
       new htmlWebpackPlugin({
         template: path.resolve(__dirname, "src/index.html"),
       }),

@@ -45,18 +45,18 @@ const Content = () => (
             </Typography>
           </Grid>
           <Grid item xs={12} md={12}>
-            <Button variant="contained" href="https://github.com/kdxu" size="sm">
+            <Button variant="contained" href="https://github.com/kdxu" size="small">
               <Code />
               GitHub
             </Button>
-            <Button variant="contained" href="https://github.com/kdxu/myself-release-notes" size="sm">
+            <Button variant="contained" href="https://github.com/kdxu/myself-release-notes" size="small">
               <Code />
               じぶんリリースノート
             </Button>
             <Button
               variant="contained"
               href="https://devblog.fornothing.net"
-               size="sm"
+               size="small"
             >
               <Create />
               Memo

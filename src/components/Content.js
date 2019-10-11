@@ -30,10 +30,6 @@ const Content = () => (
                 <Code/>
               GitHub
             </Button>
-            <Button href="https://github.com/kdxu/myself-release-notes" size="small" color="primary">
-                <Create/>
-              じぶんリリースノート
-            </Button>
             <Button
               href="https://devblog.fornothing.net"
               size="small"
@@ -54,32 +50,8 @@ const Content = () => (
             </Typography>
             <ul>
               <ListItem style={{ fontWeight: 'bold'}}>2016年4月: 株式会社リクルートホールディングス 入社</ListItem>
-              <ul>
-                <ListItem>英語学習支援サービスサーバーサイド開発(Scala)</ListItem>
-                <ListItem>英語学習支援サービスフロントエンド開発(AngularJS)</ListItem>
-                <ListItem>英語学習支援サービスAndroid開発(Java)</ListItem>
-              </ul>
               <ListItem style={{ fontWeight: 'bold'}}>2016年10月: 株式会社リクルートホールディングス 退社</ListItem>
               <ListItem style={{ fontWeight: 'bold'}}>2016年10月: 独立(自営業)</ListItem>
-              <ul>
-                <ListItem>就職活動支援サービスネイティブアプリ開発(Swift/KotListItemn)</ListItem>
-                <ListItem>個人間送金サービスフロントエンド開発(CycleJS)</ListItem>
-                <ListItem>
-                  タブレットを用いた子供向け知育アプリ開発(Ruby on Rails/Unity)
-                </ListItem>
-                <ListItem>経理向けWebサービス開発(AWS/Nginx/Django/React)</ListItem>
-                <ListItem>
-                  ソーシャルゲーム基盤システム開発(AWS/Nginx/EListItemxir/Erlang)
-                </ListItem>
-                <ListItem>
-                  ソーシャルゲームバックエンド開発(AWS/Nginx(OpenResty)/EListItemxir)
-                </ListItem>
-                <ListItem>
-                  Django / React Native / React SPA / WebRTC
-                  を用いたシステム開発(非公開)
-                </ListItem>
-                <ListItem>React Native / WebRTC を用いたiOS アプリ開発(非公開)</ListItem>
-              </ul>
             </ul>
           </Grid>
         </Grid>
@@ -94,10 +66,9 @@ const Content = () => (
             </Typography>
             <ul>
               <ListItem>
-                <Link href="https://github.com/OpenAyame/ayame">
-                  WebRTC SignaListItemng Server Ayame
+                <Link href="https://github.com/OpenAyame">
+                  OpenAyame プロジェクト
                 </Link>
-                の開発
               </ListItem>
             </ul>
           </Grid>
@@ -127,9 +98,8 @@ const Content = () => (
               <ul>
                 <ListItem>AWS, GCP, Ansible</ListItem>
                 <ListItem>WebRTC, それにまつわるネットワーク関連技術</ListItem>
-                <ListItem>UI/UX (weak)</ListItem>
                 <ListItem>
-                  Adobe XD(weak), Adobe Illustrator(weak), Adobe After Effects
+                  Adobe XD, Adobe Illustrator, Adobe After Effects
                 </ListItem>
               </ul>
             </ul>

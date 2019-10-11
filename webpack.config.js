@@ -14,8 +14,8 @@ module.exports = (env, argv) => {
     entry: {
       main: [
         path.resolve(__dirname, "src/main.js"),
-        'webpack-plugin-serve/client'
-      ]
+        isProduction ? null : 'webpack-plugin-serve/client'
+      ].filter(Boolean)
     },
     output: {
       filename: isProduction ? "bundle.[hash].js" : "[name].js",
